@@ -1,0 +1,24 @@
+spring:
+  datasource:
+    url: jdbc:h2:mem:testdb;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=FALSE;MODE=MySQL
+    driver-class-name: org.h2.Driver
+    username: sa
+    password: 
+  jpa:
+    hibernate:
+      ddl-auto: create-drop
+    show-sql: false
+    database-platform: org.hibernate.dialect.H2Dialect
+  flyway:
+    enabled: false
+
+app:
+  jwt:
+    secret: 9a7f8e6d5c4b3a210fedcba9876543210123456789abcdef0123456789abcdef
+    expiration-ms: 3600000
+  cors:
+    allowed-origins: http://localhost:5173
+  ai:
+    provider: RULE_BASED
+    api-key: 
+    model: test-model

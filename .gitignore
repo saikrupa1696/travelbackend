@@ -1,0 +1,35 @@
+# Environment and secret files
+.env
+.env.*
+.env.local
+*.env
+!.env.example
+
+# Maven build directory
+target/
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.next
+release.properties
+
+# Logs and runtime files
+*.log
+logs/
+
+# IDE and Editor files
+.idea/
+*.iml
+.vscode/
+.classpath
+.project
+.settings/
+bin/
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Temporary test scripts
+test_flow.ps1
+scratch/
